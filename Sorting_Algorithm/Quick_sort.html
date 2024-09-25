@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selection Sort Visualization</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Algorithms-</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="./Bubble_sort.html">Bubble_sort</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Insertion_sort.html">Insertion_sort</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Selection_sort.html">Selection_sort</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Merge_sort.html">Merge_sort</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./Quick_sort.html">Quick_sort</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="sort">
+    <div id="inputForm">
+      <form onsubmit="startVisualization(event)">
+        <h1>Quick Sort Visualization</h1>
+        <label for="arraySize">Enter Array size:</label>
+        <input type="number" id="arraySize" name="arraySize" required />
+        <br />
+        <label for="arrayElements">Enter Array elements:</label>
+        <input type="text" id="arrayElements" name="arrayElements" required placeholder="input number less than 70" />
+        <br />
+        <button id="mybutton" type="submit">Sort</button>
+      </form>
+    </div>
+
+    <div id="barsContainer">
+      <div id="bars"></div>
+    </div>
+  </div>
+  <script src="../JS/Quick_sort.js">
+  </script>
+</body>
+
+</html>
